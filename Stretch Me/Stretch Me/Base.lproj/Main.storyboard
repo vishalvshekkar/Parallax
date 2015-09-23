@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fUD-AW-gbD">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Si0-MC-uhB">
+            <objects>
+                <tableViewController id="fUD-AW-gbD" customClass="ViewController" customModule="Stretch_Me" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="166" sectionHeaderHeight="28" sectionFooterHeight="28" id="jSu-3c-Cxu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="mZZ-he-bFL">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="250"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="City2" translatesAutoresizingMaskIntoConstraints="NO" id="FCf-CT-ByU">
+                                    <rect key="frame" x="-50" y="-50" width="700" height="350"/>
+                                    <animations/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="September 23rd, 2015" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ry3-ob-hzH">
+                                    <rect key="frame" x="18" y="18" width="564" height="21"/>
+                                    <animations/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                    <size key="shadowOffset" width="5" height="-1"/>
+                                </label>
+                            </subviews>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="FCf-CT-ByU" firstAttribute="leading" secondItem="mZZ-he-bFL" secondAttribute="leading" constant="-50" id="7RZ-SC-TDO"/>
+                                <constraint firstAttribute="bottom" secondItem="FCf-CT-ByU" secondAttribute="bottom" constant="-50" id="JGz-7E-t59"/>
+                                <constraint firstItem="FCf-CT-ByU" firstAttribute="top" secondItem="mZZ-he-bFL" secondAttribute="top" constant="-50" id="TTZ-eP-xn6"/>
+                                <constraint firstItem="Ry3-ob-hzH" firstAttribute="leading" secondItem="mZZ-he-bFL" secondAttribute="leading" constant="18" id="bSa-rU-w0Y"/>
+                                <constraint firstAttribute="trailing" secondItem="FCf-CT-ByU" secondAttribute="trailing" constant="-50" id="far-tq-8kP"/>
+                                <constraint firstItem="Ry3-ob-hzH" firstAttribute="top" secondItem="mZZ-he-bFL" secondAttribute="top" constant="18" id="nf7-l9-Tfv"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="166" id="pRb-SD-O5r" customClass="NewsItemCell" customModule="Stretch_Me" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="278" width="600" height="166"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pRb-SD-O5r" id="ZK4-vG-Tgg">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="165"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Entertainment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Up-5S-wGX">
+                                            <rect key="frame" x="18" y="8" width="574" height="24"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <color key="textColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="The new batman vs. Super man movie is to be released soon!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Znz-dB-nBo">
+                                            <rect key="frame" x="18" y="40" width="574" height="117"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="2Up-5S-wGX" secondAttribute="trailing" id="645-wk-tD1"/>
+                                        <constraint firstItem="Znz-dB-nBo" firstAttribute="top" secondItem="2Up-5S-wGX" secondAttribute="bottom" constant="8" id="F59-zh-9mF"/>
+                                        <constraint firstItem="Znz-dB-nBo" firstAttribute="bottom" secondItem="ZK4-vG-Tgg" secondAttribute="bottomMargin" id="Wwt-XH-Oll"/>
+                                        <constraint firstItem="Znz-dB-nBo" firstAttribute="leading" secondItem="ZK4-vG-Tgg" secondAttribute="leadingMargin" constant="10" id="Xtb-Vz-WBl"/>
+                                        <constraint firstItem="2Up-5S-wGX" firstAttribute="leading" secondItem="ZK4-vG-Tgg" secondAttribute="leadingMargin" constant="10" id="Zpr-gI-U8F"/>
+                                        <constraint firstItem="2Up-5S-wGX" firstAttribute="top" secondItem="ZK4-vG-Tgg" secondAttribute="topMargin" id="f7r-27-rfM"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Znz-dB-nBo" secondAttribute="trailing" id="gKi-uB-YFT"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <connections>
+                                    <outlet property="category" destination="2Up-5S-wGX" id="fMi-Zl-pGG"/>
+                                    <outlet property="news" destination="Znz-dB-nBo" id="qMo-To-zn1"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="fUD-AW-gbD" id="O4B-Y7-TTl"/>
+                            <outlet property="delegate" destination="fUD-AW-gbD" id="NXD-hC-PGq"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dKD-bI-sK1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="316" y="393"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="City2" width="960" height="540"/>
+    </resources>
+</document>
