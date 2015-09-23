@@ -82,6 +82,8 @@ class ViewController: UITableViewController {
         
     }
     
+//    http://blog.matthewcheok.com/design-teardown-stretchy-headers/
+    
     func changeImage() {
         let view = headerView.subviews
         for views in view {
