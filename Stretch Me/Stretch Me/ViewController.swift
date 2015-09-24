@@ -92,36 +92,35 @@ class ViewController: UITableViewController {
                 if let img = imageView.image {
                     let blackView = UIView(frame: imageView.frame)
                     blackView.backgroundColor = UIColor.blackColor()
-                    blackView.alpha == 0.0
+                    blackView.alpha = 0.0
                     headerView.addSubview(blackView)
                     headerView.bringSubviewToFront(blackView)
-                    let duration: NSTimeInterval = 5.0
+                    let duration: NSTimeInterval = 0.5
                     let im1 = UIImage(named: "City1")
                     let im2 = UIImage(named: "City2")
                     let im3 = UIImage(named: "City3")
                     let im4 = UIImage(named: "City4")
                     UIView.animateWithDuration(duration, animations: { () -> Void in
-                        blackView.alpha == 0.9
+                        blackView.alpha = 1.0
                         }, completion: { (myBoo) -> Void in
-                            blackView.alpha == 0.9
-                            dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                            blackView.alpha = 1.0
                                 if img == im1 {
                                     imageView.image = im2
                                     UIView.animateWithDuration(duration, animations: { () -> Void in
-                                        blackView.alpha == 0.1
+                                        blackView.alpha = 0.0
                                         }, completion: { (myBoo) -> Void in
                                             dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                                                blackView.alpha == 0.1
+                                                blackView.alpha == 0.0
                                                 blackView.removeFromSuperview()
                                             })
                                     })                            }
                                 else if img == im2 {
                                     imageView.image = im3
                                     UIView.animateWithDuration(duration, animations: { () -> Void in
-                                        blackView.alpha == 0.1
+                                        blackView.alpha = 0.0
                                         }, completion: { (myBoo) -> Void in
                                             dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                                                blackView.alpha == 0.1
+                                                blackView.alpha = 0.0
                                                 blackView.removeFromSuperview()
                                             })
                                     })
@@ -129,10 +128,10 @@ class ViewController: UITableViewController {
                                 else if img == im3 {
                                     imageView.image = im4
                                     UIView.animateWithDuration(duration, animations: { () -> Void in
-                                        blackView.alpha == 0.1
+                                        blackView.alpha = 0.0
                                         }, completion: { (myBoo) -> Void in
                                             dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                                                blackView.alpha == 0.1
+                                                blackView.alpha = 0.0
                                                 blackView.removeFromSuperview()
                                             })
                                     })
@@ -140,15 +139,15 @@ class ViewController: UITableViewController {
                                 else {
                                     imageView.image = im1
                                     UIView.animateWithDuration(duration, animations: { () -> Void in
-                                        blackView.alpha == 0.1
+                                        blackView.alpha = 0.0
                                         }, completion: { (myBoo) -> Void in
                                             dispatch_async(dispatch_get_main_queue(), { () -> Void in
-                                                blackView.alpha == 0.1
+                                                blackView.alpha = 0.0
                                                 blackView.removeFromSuperview()
                                             })
                                     })
                                 }
-                            })
+                            
                             
                     })
                     
