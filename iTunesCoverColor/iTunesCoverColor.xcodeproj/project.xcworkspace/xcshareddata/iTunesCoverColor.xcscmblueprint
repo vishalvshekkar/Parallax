@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "EB6DA7DC86190D4B897D5F08563BD537E48B8F67",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "EB6DA7DC86190D4B897D5F08563BD537E48B8F67" : 0,
+    "9F65A476A58933AE6B22EAE730A194955F98FC66" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CE62C23F-B412-4501-A443-1F5BCF7EBDA4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "EB6DA7DC86190D4B897D5F08563BD537E48B8F67" : "Parallax\/",
+    "9F65A476A58933AE6B22EAE730A194955F98FC66" : "..\/..\/Users\/vishal\/Surge"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "iTunesCoverColor",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "iTunesCoverColor\/iTunesCoverColor.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mattt\/Surge",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9F65A476A58933AE6B22EAE730A194955F98FC66"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/vishalvshekkar\/Parallax",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EB6DA7DC86190D4B897D5F08563BD537E48B8F67"
+    }
+  ]
+}

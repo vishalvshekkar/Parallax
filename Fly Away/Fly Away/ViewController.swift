@@ -95,6 +95,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             return card
         }
         else {
+            bottomCVCell.target = self
             let bottomCard = bottomCollectionView.dequeueReusableCellWithReuseIdentifier("bottomCard", forIndexPath: indexPath) as! bottomCVCell
             let viewsIn = bottomCard.subviews
             for vs in viewsIn {
@@ -106,6 +107,10 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             print(indexPath.row)
             return bottomCard
         }
+    }
+    
+    func didDrag(sender: UIButton) {
+        print("Yo, you touched me!")
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
@@ -127,11 +132,11 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         blackFrame.backgroundColor = UIColor.blackColor()
         self.view.addSubview(blackFrame)
         cellView.frame.origin = CGPoint(x: 0.0, y: 0.0)
-        var flyingView1 = UIView(frame: CGRect(x: selectedFrame.origin.x, y: selectedFrame.origin.y, width: flyingCellSize.width, height: flyingCellSize.height))
+        let flyingView1 = UIView(frame: CGRect(x: selectedFrame.origin.x, y: selectedFrame.origin.y, width: flyingCellSize.width, height: flyingCellSize.height))
         cellView.frame.origin = CGPointZero
         UIGraphicsBeginImageContext(cellView.bounds.size);
         cellView.layer.renderInContext(UIGraphicsGetCurrentContext()!)
-        var screenShot = UIGraphicsGetImageFromCurrentImageContext();
+        let screenShot = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
         let imageView = UIImageView(frame: CGRect(x: 0.0, y: 0.0, width: flyingCellSize.width, height: flyingCellSize.height))
         imageView.image = screenShot

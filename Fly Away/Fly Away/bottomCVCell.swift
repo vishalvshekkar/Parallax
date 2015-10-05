@@ -12,10 +12,19 @@ class bottomCVCell: UICollectionViewCell {
     
     @IBOutlet weak var bottomHolder: UIView!
     @IBOutlet weak var bottomImageView: UIImageView!
+    static var target : AnyObject?
     
     override func awakeFromNib() {
         bottomHolder.frame = self.contentView.frame
+        let button = UIButton(frame: self.contentView.frame)
+        button.frame.origin = CGPointZero
+        button.setTitle("", forState: UIControlState.Normal)
+        button.addTarget(bottomCVCell.target, action: "didDrag:", forControlEvents: UIControlEvents.TouchDown)
+        
+//        self.contentView.addSubview(button)
     }
+    
+    
     
     func parallaxEffectOnBackground(view: UIView) {
         let relativeMotionValue = 20
